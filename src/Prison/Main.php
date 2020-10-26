@@ -214,14 +214,14 @@ class Main extends PluginBase{
     }
 
     public function getMineReset() : MineReset{
-        return $this->getServer()->getPluginManager()->getPlugin("MineReset");
+        //return $this->getServer()->getPluginManager()->getPlugin("MineReset");
     }
 
     public function getPurePerms() : PurePerms{
-        return $this->getServer()->getPluginManager()->getPlugin("PurePerms");
+      //  return $this->getServer()->getPluginManager()->getPlugin("PurePerms");
     }
 
     public function getEconomyAPI() : EconomyAPI{
-        return $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
+       // return $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
     }
 }
