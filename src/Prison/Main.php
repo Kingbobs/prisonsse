@@ -215,13 +215,16 @@ class Main extends PluginBase{
 
     public function getMineReset() : MineReset{
         return $this->getServer()->getPluginManager()->getPlugin("MineReset");
+        return null;
     }
 
     public function getPurePerms() : PurePerms{
         return $this->getServer()->getPluginManager()->getPlugin("PurePerms");
+        return null;
     }
 
     public function getEconomyAPI() : EconomyAPI{
         return $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
+        return null;
     }
 }
