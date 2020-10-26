@@ -212,22 +212,27 @@ class Main extends PluginBase{
         }
         return null;
     }
-    public function onLoad(): void
-    {
+    public function onLoad(): void{
+    
     //public function getMineReset() : MineReset{
-      //  return $this->getServer()->getPluginManager()->getPlugin("MineReset");
-   // }
-
+      //  return $this->getServer()->getPluginManager()->getPlugin("MineReset")
+    //  $mineReset = $this->getServer()->getPluginManger()->getPlugin("MineReset")
+      //  if($mineReset) instanceof MineReset) {
+        //  $this->getServer()->getLogger()->notice("Loading PureChat MineReset!");
+      //} else {
+            $this->getServer()->getLogger()->warning("INSTALL MineReset");
         $purePerms = $this->getServer()->getPluginManager()->getPlugin("PurePerms");
         if ($purePerms instanceof PurePerms) {
             $this->getServer()->getLogger()->notice("Loading PureChat PurePerms!");
         } else {
             $this->getServer()->getLogger()->warning("INSTALL PUREPERMS");
-
+        }
+        // EconomyAPI Plugin
         $economyAPI = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
         if ($economyAPI instanceof EconomyAPI) {
-            $this->getServer()->getLogger()->notice("Loading EconomyAPI!");
+            $this->getServer()->getLogger()->notice("Loading  PureChat EconomyAPI!");
         } else {
             $this->getServer()->getLogger()->warning("INSTALL EconomyAPI!");
         }
+    }
 }
